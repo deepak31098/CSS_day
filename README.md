@@ -23,7 +23,7 @@ Clone this repository to your local machine:
 
 bash
 Copy code
-git clone https://github.com/your-username/simple-website.git
+git clone https://github.com/deepak31098/CSS_day.git
 Open the project folder in your code editor.
 
 Open index.html or about.html in your web browser to view the website.
