@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- add fonts using links -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>CSS Day</title>
+  </head>
+  <body class="home">
+    <header class="header">
+      <img src="./icons/menu.svg" class="menu" />
+      <a class="header__link" href="/">CSS Day</a>
+      <nav class="nav">
+        <ul class="nav_list">
+          <li class="nav__list-item"><a href="#">About</a></li>
+          <li class="nav__list-item"><a href="speakers.html">Speakers</a></li>
+          <li class="nav__list-item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <img src="./icons/shopping-cart.svg" alt="Shopping cart" />
+    </header>
+    <main class="main">
+      <p class="main_heading">
+        CSS Day is a conference for developers who love beautiful websites.
+      </p>
+      <p class="main__sub-heading">4-8 June 2023</p>
+      <div class="button-container">
+        <button class="button button-primary">
+          Buy Tickets
+          <img
+            src="./icons/arrow-right.svg"
+            alt="Right arrow"
+            class="button__icon"
+          />
+        </button>
+        <button class="button button-secondary">Contact us</button>
+      </div>
+    </main>
+    <script type="text/javascript">
+      const nav = document.querySelector(".nav");
+      const menu = document.querySelector(".menu");
+      const body = document.querySelector("body");
+      menu.addEventListener("click",() => {
+        nav.classList.toggle("nav--visible");
+        console.log(menu.src)
+        menu.src = menu.src.includes("icons/close-menu.svg") ? "./icons/menu.svg":"./icons/close-menu.svg"
+        body.classList.toggle("body--no-scroll")
+      })
+    </script>
+  </body>
+</html>

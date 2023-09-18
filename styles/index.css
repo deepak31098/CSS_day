@@ -1,0 +1,31 @@
+@import "./base.css";
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.home .main_heading {
+  font-size: 120px;
+  font-weight: bold;
+}
+
+.home .main__sub-heading {
+  font-size: 40px;
+}
+
+@media (max-width: 1220px) {
+  .home .main_heading {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 590px) {
+  .home .main_heading {
+    font-size: 40px;
+  }
+
+  .home .main__sub-heading {
+    font-size: 24px;
+  }
+}
