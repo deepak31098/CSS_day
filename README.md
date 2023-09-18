@@ -26,4 +26,4 @@ Copy code
 git clone https://github.com/deepak31098/CSS_day.git
 Open the project folder in your code editor.
 
-Open index.html or about.html in your web browser to view the website.
+Open index.html or speakers.html in your web browser to view the website.
